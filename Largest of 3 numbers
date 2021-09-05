@@ -1,0 +1,14 @@
+// Largest no.
+
+#include <iostream>
+using namespace std;
+int main(){
+	int a, b, c, largest;
+	
+	cout<<"Enter 3 nos: \n";
+	cin>>a>>b>>c;
+	
+	largest=((a>b)?a:b);
+	largest=((largest>c)?largest:c);
+	cout<<"\nLargest no.="<<largest;
+}
