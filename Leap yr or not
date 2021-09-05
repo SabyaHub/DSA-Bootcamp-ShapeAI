@@ -1,0 +1,15 @@
+//Leap year or not
+
+#include <iostream>
+using namespace std;
+int main(){
+	int yr;
+	
+	cout<<"Enter yr: ";
+	cin>>yr;
+	
+	if(yr%4==0)
+		cout<<"Leap yr";
+	else
+		cout<<"Non-leap yr";
+}
