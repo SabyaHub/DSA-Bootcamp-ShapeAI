@@ -1,0 +1,30 @@
+// Grading/Upgrading
+
+#include <iostream>
+using namespace std;
+int main(){
+	int grade[10], i, m, n, rounded_grade[10];
+	
+	cout<<"Enter no. of students: ";
+	cin>>n;
+	cout<<"Enter grades of each student one by one: ";
+	for (i=0; i<n; i++)
+		cin>>grade[i];
+		
+	cout<<"Final grades are: "<<endl;	
+	for (i=0; i<n; i++){
+		if (grade[i]<38)
+			cout<<grade[i];
+			
+		else{
+			m=grade[i]/5;
+			m+=1;
+			rounded_grade[i] = m*5;
+						
+			if (rounded_grade[i]-grade[i]<3)
+				cout<<rounded_grade[i]<<endl;
+			else
+				cout<<endl<<grade[i]<<endl;
+		}
+	}
+}
